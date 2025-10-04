@@ -1,0 +1,14 @@
+output "instance_connection_name" {
+  description = "The connection name of the Cloud SQL instance."
+  value       = google_sql_database_instance.default.connection_name
+}
+
+output "database_instance_name" {
+  description = "The name of the Cloud SQL instance."
+  value       = google_sql_database_instance.default.name
+}
+
+#output "database_name" {
+#  description = "The name of the database."
+#  value       = google_sql_database.default.name
+#}
